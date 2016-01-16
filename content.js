@@ -1,6 +1,6 @@
 (function(){
 	var pre = document.querySelector("pre"),
-		title = document.title+"_"+document.URL.match(/\d{8}/)[0],
+		title = document.title+"_"+(document.URL.match(/\d{8}/)||["00000000"])[0],
 		data = localStorage.getItem(title) ;
 
 	data?(pre.innerHTML=data):localStorage.setItem(title,pre.innerHTML);
