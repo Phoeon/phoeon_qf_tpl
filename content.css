@@ -10,6 +10,8 @@ body{position:relative;color:rgb(51,102,170);}
 h1{text-indent:3rem;font-size:1.5rem;font-family:fantasy}
 .toggle{cursor:pointer;}
 .toggle:hover{color:#69f;}
+.quote{position:relative;}
+.quote.hidden{display:none;}
 .code{background-color:#eee;position:relative;height:36rem;overflow:auto;transition:all 0.3s;}
 .code.hidden{height:.0rem;}
 .code:before{position:absolute;content:"";height:100%;left:2.0rem;width:.1rem;background:rgb(51,102,170);}
