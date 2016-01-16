@@ -15,7 +15,7 @@
 	},false);
 	document.addEventListener("click",function(e){
 		var target = e.target;
-		if(/label|h1/.test(target.tagName.toLowerCase())&&target.className==="toggle"){
+		if(/toggle/.test(target.className)&&!/disabled/.test(target.className)){
 			var sib = target.nextElementSibling||{};
 			if(/hidden/.test(sib.className)){
 				sib.className = sib.className.replace(/\s*hidden/,"");
