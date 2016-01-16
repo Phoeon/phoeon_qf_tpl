@@ -1,5 +1,4 @@
 (function(){
-	debugger
 	var pre = document.querySelector("pre"),
 		title = document.title+"_"+document.URL.match(/\d{8}/)[0],
 		data = localStorage.getItem(title) ;
