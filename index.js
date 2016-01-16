@@ -1,4 +1,7 @@
 window.onload=function() {
+		// 清空 bendi缓存
+	 	localStorage.clear();
+	 	console.log("cleared");
 		var sidebar = document.querySelector(".left"),
 			frameWrap=document.querySelector(".frame-wrap") ,
 			iframe = document.querySelector("#iframe"),
